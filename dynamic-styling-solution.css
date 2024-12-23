@@ -1,0 +1,18 @@
+/* dynamic-styling-solution.css */
+
+/* Base styles - these remain unchanged */
+li:nth-child(odd) { background-color: #f0f0f0; }
+li:nth-child(even) { background-color: #fff; }
+
+/* JavaScript required to re-apply styling after DOM updates */
+//  (This would go in your JavaScript file, e.g., script.js)
+const list = document.querySelector('ul');
+
+list.addEventListener('DOMNodeInserted', reapplyStyles);
+list.addEventListener('DOMNodeRemoved', reapplyStyles);
+
+function reapplyStyles() {
+  // Re-apply your :nth-child styles here. 
+  //  One approach is to remove and re-add the styles dynamically
+  // Or, you can use a class-based approach
+} 
