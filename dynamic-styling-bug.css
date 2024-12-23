@@ -1,0 +1,1 @@
+The CSS rule `:nth-child(n)` can sometimes behave unexpectedly when dealing with dynamically generated content or modifications to the DOM.  If elements are added or removed after the initial rendering, the selector might not match as intended, leading to unexpected styling.  This can be more prevalent when working with frameworks or libraries that manipulate the DOM frequently.
